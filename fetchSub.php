@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json");
-header("Access-Control-Allow-Origin: https://localhost:8100"); // Enable cross-origin requests for development
+header("Access-Control-Allow-Origin: http://localhost:8100"); // Enable cross-origin requests for development
 
 // Database connection
 $servername = "localhost";

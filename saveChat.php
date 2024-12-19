@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: https://localhost:8100");
+header("Access-Control-Allow-Origin: http\://localhost:8100");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($chatName && $senderName && $senderId && $receiverId) {
         // Database connection
-        $conn = new mysqli('localhost', 'hq2app', "", 'hq2app');
+        $conn = new mysqli('localhost', 'root', "", 'hq2app');
 
         if ($conn->connect_error) {
             http_response_code(500);

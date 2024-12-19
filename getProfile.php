@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Set headers for CORS
-header("Access-Control-Allow-Origin: https://localhost:8100");
+header("Access-Control-Allow-Origin: http://localhost:8100");
 header("Access-Control-Allow-Methods: GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header('Content-Type: application/json'); // Ensure JSON response
